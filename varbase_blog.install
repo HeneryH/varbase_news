@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Install, update and uninstall functions for the varbase blog module.
+ * Install, update and uninstall functions for the varbase News module.
  */
 
 use Symfony\Component\Yaml\Yaml;
@@ -14,7 +14,7 @@ use Drupal\Core\Config\FileStorage;
 /**
  * Implements hook_install().
  */
-function varbase_blog_install() {
+function varbase_news_install() {
 
   $module_name = preg_replace('/_install$/', '', __FUNCTION__);
   $module_path = Drupal::service('module_handler')->getModule($module_name)->getPath();
