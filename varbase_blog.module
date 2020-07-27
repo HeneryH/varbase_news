@@ -2,14 +2,14 @@
 
 /**
  * @file
- * Contains varbase_blog.module.
+ * Contains varbase_news.module.
  */
 
 /**
  * Implements hook_preprocess_HOOK() for menu.html.twig.
  */
-function varbase_blog_preprocess_menu(&$variables) {
-  if (isset($variables['menu_name']) && $variables['menu_name'] == 'blog-menu') {
+function varbase_news_preprocess_menu(&$variables) {
+  if (isset($variables['menu_name']) && $variables['menu_name'] == 'news-menu') {
     $variables['attributes']['class'] = [
       'nav-pills',
       'list-inline',
